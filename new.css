@@ -1,0 +1,249 @@
+#CF {
+    text-align: center;
+    size: 500px;
+}
+#mainPanel {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0px;
+    text-align: center;
+    background-color: lightGrey;
+    border: 2px solid black;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 1000px;
+    position: relative;
+    /* padding: 20px; */
+}
+#mainPanel .box {
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+#monthContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+#monthTitle {
+    /* text-align: center; */
+    font-size: 30px;
+
+}
+#RB, #LB {
+    border: 2px solid white;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+#LB {
+    transform: scaleX(-1);
+}
+#dayHeadings {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#dayHeadings .dayHeader {
+    text-align: center;
+}
+#eventMaker {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    border: 2px solid black;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    z-index: 1000;
+}
+#eventMaker.active {
+    visibility: visible;
+    opacity: 100;
+}
+#eventTitle {
+    margin-bottom: -10%;
+}
+#eventTitle, #eventTime {
+    height: 25%;
+    width: 75%;
+    border: 2px solid black;
+    font-size: 25px;
+}
+#confirmButton {
+    height: 10%;
+    width: 50%;
+    border: 2px solid black;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.box .inactive {
+    visibility: hidden;
+    display: none;
+    
+}
+#friends {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    border: 2px solid black;
+    background-color: white;
+    width: 20%;
+    height: 95%;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    z-index: 1001;
+}
+#options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1002;
+    height: 5%;
+}
+#friends.active {
+    visibility: visible;
+    opacity: 100;
+    display: flex;
+    border: 2px solid black;
+}
+#friendHeaders {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    flex-direction: row;
+}
+#friendListToggle, #addFriendsToggle, #friendRequestsToggle {
+    height: 100%;
+    width: 50%;
+}
+#searchDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+}
+#searchBar {
+    width: 80%
+}
+#searchButton {
+    width:20%;
+}
+#list {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    gap: 50px;
+    overflow: auto;
+}
+.usernameDivs, .requestButtons {
+    height: 100%;
+}
+.requestButtons {
+    float: right;
+}
+.friendListDivs {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: solid black 1px;
+}
+.friendToggleActive {
+    background-color: rgb(77, 166, 234)
+}
+.timeDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#startTimeDiv {
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+#compareCalendarsDiv {
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 200px;
+}
+#compareCalendarsDiv.active {
+    visibility: visible;
+    opacity: 100;
+}
+#dayInput, #compareCalendarsSubmit {
+    height: 50%;
+}
+#dayInput {
+    font-size: 30px;
+}
+#compareCalendarsResultsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    border: solid black 2px;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 200px;
+    background-color: white;
+    width: 30%
+}
+#compareCalendarsResultsDiv.active {
+    opacity: 100;
+    visibility: visible;
+}
+#message {
+    height: 70%;
+    /* text-align: center; */
+    font-size: 25px;
+}
+#exit {
+    height: 30%;
+}
+#eventErrorMessageDiv {
+    height: 2%;
+    font-size: 12px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+.cEvent {
+    text-decoration: 'line-through';
+}
+img {
+    height: 100%;
+    width: 150%;
+}

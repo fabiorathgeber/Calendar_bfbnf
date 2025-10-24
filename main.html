@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="new.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="options">
+                <button id="toggleFriends">Friends</button>
+                <a href="/index.html" id="logout">Log Out</a>
+            </div>
+            <div id="friends" >
+                <div id="friendHeaders">
+                    <button id="friendListToggle" class="friendToggleActive friendToggle">List</button>
+                    <button id="addFriendsToggle" class="friendToggle">Add</button>
+                    <button id="friendRequestsToggle" class="friendToggle">Requests</button>
+                </div>
+                <div id="searchDiv">
+                    <input id="searchBar" type="text" placeholder="Search users...">
+                    <button id="searchButton">Search</button>
+                </div>
+                <div id="list">
+                </div>
+            </div>
+            <h1 id="CF">Calendar</h1>
+            <div id = "monthContainer">
+                <button id="LB">
+                    <img src="right-arrow.png">
+                </button>
+                <h2 id="monthTitle"></h2>
+                <button id="RB">
+                    <img src="right-arrow.png">
+                </button>
+            </div>
+            <div id = "dayHeadings">
+            </div>
+            <div id="mainPanel">
+            </div>
+
+            <div id="eventMaker">
+                <input id="eventTitle" type="text" name="eventTitle" placeholder="Enter Event Name">
+                <div class = "timeDiv" id="startTimeDiv">
+                    <label class="timeLabel">Enter start time</label>
+                    <input id="eventStartTime" type="time" name="eventStartTime" placeholder="Enter Time of Event">
+                </div>
+                <div class="timeDiv">
+                    <label class="timeLabel">Enter end time</label>
+                    <input id="eventEndTime" type="time" name="eventEndTime" placeholder="Enter Time of Event">
+                </div>
+                <div id="eventErrorMessageDiv"></div>
+
+                <button id="confirmButton">Confirm</button>
+            </div>
+            <div id="compareCalendarsDiv">
+                <input id="dayInput" type="number" name="day" placeholder = "Enter day">
+                <button id="compareCalendarsSubmit">Compare!</button>
+            </div>
+            <div id="compareCalendarsResultsDiv">
+                <div id="message"></div>
+                <button id="exit">OK</button>
+            </div>
+            
+
+            <script src="day.js" type="module"></script>
+            <script src="main.js" type="module"></script>
+            <script src="events.js" type="module"></script>
+            <script src="friends.js" type="module"></script>
+            <!-- <script src="loginHandler.js" type="module"></script> -->
+        </div>
+    </body>
+</html>

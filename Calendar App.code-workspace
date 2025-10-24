@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Calendar App",
+			"path": "."
+		},
+		{
+			"name": "Website",
+			"path": "../Website"
+		},
+		{
+			"name": "JavaScript",
+			"path": "../JavaScript"
+		}
+	],
+	"settings": {}
+}
